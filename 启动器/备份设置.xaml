@@ -9,29 +9,20 @@
                    Text="打开 PCL 主程序所在文件夹，将该文件夹下的 PCL 文件夹复制到合适位置即可。"/>
     </StackPanel>
 </local:MyCard>
-<local:MyCard Title="备份注册表">
+<local:MyCard Title="备份注册表（已移至 AppData）">
     <StackPanel Margin="25,40,23,15">
-        <local:MyHint Margin="0,0,0,15" Text="由于数据迁移至 AppData，本模块已失效" IsWarn="True" />
         <TextBlock Margin="0,0,0,4" LineHeight="17"
-                   Text="PCL 会在注册表中存储部分个人设置（例如隐藏主题、账号密码、Java 路径等），在重装系统前有必要先备份其中的内容。&#xa;需要注意的是，账号密码、隐藏主题等敏感信息只能在同一台电脑上进行备份、还原，无法在更换电脑的情况下进行迁移。"/>
+                   Text="PCL 会在 AppData 中存储部分个人设置（例如隐藏主题、账号密码、Java 路径等），在重装系统前有必要先备份其中的内容。&#xa;需要注意的是，账号密码、隐藏主题等敏感信息只能在同一台电脑上进行备份、还原，无法在更换电脑的情况下进行迁移。"/>
         <TextBlock Margin="0,12,0,7" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
-                   Text="具体步骤" />
+                    Text="备份方法" />
         <TextBlock Margin="0,0,0,4" LineHeight="17"
-                   Text="1. 点击下方按钮打开注册表编辑器。&#xa;2. 在其左边栏打开 HKEY_CURRENT_USER\Software\PCL 文件夹。&#xa;3. 右键左边栏中的 PCL 文件夹，选择 “导出”。此后，双击导出的文件即可导入配置。"/>
-        <local:MyButton MinWidth="170" Height="35" Padding="13,0" Margin="0,5,20,8" HorizontalAlignment="Left"
-                        Text="打开注册表编辑器" EventType="打开文件" EventData="regedit" />
+                    Text="配置文件位于 C:\Users\[Windows 用户名]\AppData\Roaming\.PCLCE\Config.json，如需备份，请将此文件复制到其他位置。"/>
         <TextBlock Margin="0,12,0,7" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
-                   Text="批处理备份脚本" />
+                    Text="恢复配置方法" />
         <TextBlock Margin="0,0,0,4" LineHeight="17"
-                   Text="如果你依旧没有明白上面的步骤，你可以点击下方按钮进行注册表备份。若备份成功，名为 PCLRegBackup.reg 的文件会在 PCL 文件夹内生成。"/>
-        <StackPanel Orientation="Horizontal">
-            <local:MyButton MinWidth="170" Height="35" Padding="13,0" Margin="0,5,20,8" HorizontalAlignment="Left" ToolTip="将 PCL 的注册表信息备份到 PCL 文件夹中"
-                            Text="备份注册表" EventType="打开文件" EventData="cmd.exe|/C reg export HKEY_CURRENT_USER\Software\PCL PCLRegBackup.reg" />
-            <local:MyButton MinWidth="170" Height="35" Padding="13,0" Margin="0,5,20,8" HorizontalAlignment="Left" ToolTip="如果你之前使用过备份 PCL 注册表功能，点击此按钮可以将 PCL 文件夹中的备份文件还原。"
-                            Text="恢复注册表" EventType="打开文件" EventData="PCLRegBackup.reg"/>
-        </StackPanel>
-        <local:MyHint Margin="0,0,0,15" Text="使用恢复注册表功能后需要重启 PCL。" IsWarn="True"/>
+                    Text="如果您需要恢复配置，请将备份的 Config.json 文件复制到 C:\Users\[Windows 用户名]\AppData\Roaming\.PCLCE\Backup\。"/>
+        <local:MyHint Margin="0,0,0,15" Text="使用恢复注册表功能后需要重启 PCL。" IsWarn="True" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyHint Margin="0,0,0,15" Text="作者：tang_ge、龙腾猫跃、林小槐" IsWarn="False" />
+<local:MyHint Margin="0,0,0,15" Text="作者：tang_ge、龙腾猫跃、林小槐、wyc-26" IsWarn="False" />
