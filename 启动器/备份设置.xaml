@@ -11,6 +11,7 @@
 </local:MyCard>
 <local:MyCard Title="备份注册表">
     <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,0,0,15" Text="由于数据迁移至 AppData，本模块已失效" IsWarn="True" />
         <TextBlock Margin="0,0,0,4" LineHeight="17"
                    Text="PCL 会在注册表中存储部分个人设置（例如隐藏主题、账号密码、Java 路径等），在重装系统前有必要先备份其中的内容。&#xa;需要注意的是，账号密码、隐藏主题等敏感信息只能在同一台电脑上进行备份、还原，无法在更换电脑的情况下进行迁移。"/>
         <TextBlock Margin="0,12,0,7" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
