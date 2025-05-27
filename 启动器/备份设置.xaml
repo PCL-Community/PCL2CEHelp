@@ -16,12 +16,14 @@
         <TextBlock Margin="0,12,0,7" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
                     Text="备份方法" />
         <TextBlock Margin="0,0,0,4" LineHeight="17"
-                    Text="PCL 社区版配置文件夹位于 C:\Users\[Windows 用户名]\AppData\Roaming\.PCLCE，如需备份，请将此文件夹复制到其他位置。"/>
+                    Text="PCL 社区版配置文件夹位于 C:\Users\[Windows 用户名]\AppData\Roaming\.PCLCE。"/>
+        <TextBlock Margin="0,0,0,4" LineHeight="17"
+                    Text="如需备份，请使用设置中的“导出设置”功能，并选择要保存的位置。"/>
         <TextBlock Margin="0,12,0,7" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
                     Text="恢复配置方法" />
         <TextBlock Margin="0,0,0,4" LineHeight="17"
-                    Text="如果您需要恢复配置，请将备份的文件夹重新复制到 C:\Users\[Windows 用户名]\AppData\Roaming。"/>
-        <local:MyHint Margin="0,0,0,15" Text="使用恢复注册表功能后需要重启 PCL。" IsWarn="True" />
+                    Text="如果您需要恢复配置，请使用“导入设置”功能，并选中导出的配置文件。"/>
+        <local:MyHint Margin="0,15,0,0" Text="使用“导出设置”功能后需要重启 PCL。" IsWarn="True" />
     </StackPanel>
 </local:MyCard>
 
