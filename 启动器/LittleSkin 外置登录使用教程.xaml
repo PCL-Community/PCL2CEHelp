@@ -39,41 +39,22 @@
 
         <Grid Margin="0,20,0,4">
             <TextBlock TextWrapping="Wrap" Margin="0,15,0,4" Width="200"
-                        Text="4. 打开 PCL，点击左下角的 “版本选择”。" HorizontalAlignment="Left" />
-            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/f3123cb0fa83cf916de7a6ba29acfd55565437509.png" FallbackSource="https://img.z0z0r4.top/local/2023/08/01/64c871bde4a0d.png?comment=版本选择" />
+                        Text="4. 打开 PCL，点击“新建档案”按钮。" HorizontalAlignment="Left" />
+            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i0.hdslb.com/bfs/openplatform/a29ba973a02174fa0a2df8c63a457ff066c98692.png" />
         </Grid>
 
         <Grid Margin="0,20,0,4">
             <TextBlock TextWrapping="Wrap" Margin="0,15,0,4" Width="200"
-                        Text="5. 右键点击将要启动的游戏版本。" HorizontalAlignment="Left" />
-            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/f1804edeff7fbe969ff563928a4ecef7565437509.png" FallbackSource="https://img.z0z0r4.top/local/2023/08/01/64c871fe7266a.png?comment=右键游戏版本" />
+                        Text="5. 选择“第三方验证”，点击“确认”。" HorizontalAlignment="Left" />
+            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i0.hdslb.com/bfs/openplatform/ea582f473ceebb22ca683a397767e230669e6d58.png" />
         </Grid>
 
         <Grid Margin="0,20,0,4">
             <TextBlock TextWrapping="Wrap" Margin="0,15,0,4" Width="200"
-                        Text="6. 点击左侧 “设置” 选项。" HorizontalAlignment="Left" />
-            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/37acb5fbc2db00b6d878247ff37b7d46565437509.png" FallbackSource="https://img.z0z0r4.top/local/2023/08/01/64c8725a4a256.png?comment=点击设置选项" />
-        </Grid>
-
-        <Grid Margin="0,20,0,4">
-            <TextBlock TextWrapping="Wrap" Margin="0,15,0,4" Width="200"
-                        Text="7. 滑动到页面底部，在“服务器选项”中把登录方式设为 “第三方登录：Authlib Injector 或 LittleSkin”。" HorizontalAlignment="Left" />
-            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/6b917ba251c8cd002955575116516f92565437509.png" FallbackSource="https://img.z0z0r4.top/local/2023/08/01/64c872781d6db.png?comment=设置登录方式" />
-        </Grid>
-
-        <Grid Margin="0,20,0,4">
-            <TextBlock TextWrapping="Wrap" Margin="0,15,0,4" Width="200"
-                        Text="8. 点击下方 “设置为 LittleSkin” 按钮。" HorizontalAlignment="Left" />
-            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/5d01d32d71508d96b97f430184e4405b565437509.png" FallbackSource="https://img.z0z0r4.top/local/2023/08/01/64c8729a9c5f6.png?comment=设置为littleskin" />
-        </Grid>
-
-        <local:MyHint Margin="0,20,0,0" Text="在启动游戏后，PCL 能够记忆你的账号，并且可以进行更换角色、更改皮肤、退出登录等操作。" IsWarn="False" />
-        <Grid Margin="0,10,0,0">
-            <TextBlock TextWrapping="Wrap" Margin="0,15,0,4" Width="200"
-                        Text="9. 返回主页并输入你的 LittleSkin 账号，点击 “启动游戏” 即可。" HorizontalAlignment="Left" />
-            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/38a305f731dafa806ae38da0de97ecac565437509.png" FallbackSource="https://img.z0z0r4.top/local/2023/08/01/64c872bbdf372.png?comment=启动游戏" />
+                        Text="6. 在第一栏填入“https://littleskin.cn/api/yggdrasil”，接着在第二栏与第三栏填入注册时使用的邮箱以及设置的密码，随后点击登录。" HorizontalAlignment="Left" />
+            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i0.hdslb.com/bfs/openplatform/5a941b35c2f67c1368dd91cc189d3bd9b87de664.png" />
         </Grid>
     </StackPanel>
 </local:MyCard>
 
-<local:MyHint Margin="0,0,0,15" Text="作者：一闪、呇星、EggPixel、风释清然SC、龙腾猫跃" IsWarn="False" />
+<local:MyHint Margin="0,0,0,15" Text="作者：一闪、呇星、EggPixel、风释清然SC、龙腾猫跃、" IsWarn="False" />
