@@ -10,14 +10,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Remove
+      - name: Pack
         run: |
             rm -f * || true
             rm -r .github
             ls
+            zip Help.zip ./
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Help.zip
-          path: ./
+          name: Help
+          path: Help.zip
