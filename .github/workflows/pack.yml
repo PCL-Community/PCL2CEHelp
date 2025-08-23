@@ -26,9 +26,7 @@ jobs:
         with:
           repository: PCL-Community/PCL2-CE
 
-      - name: CD
-        run: |
-            cd "Plain Craft Launcher 2/Resources"
-
       - name: Download a Build Artifact
         uses: actions/download-artifact@v5.0.0
+        with:
+          path: 'Plain Craft Launcher 2/Resources'
