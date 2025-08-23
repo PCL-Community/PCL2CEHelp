@@ -21,3 +21,14 @@ jobs:
         with:
           name: Help
           path: ./
+
+      - uses: actions/checkout@v4
+        with:
+          repository: PCL-Community/PCL-CE
+
+      - name: CD
+        run: |
+            cd "Plain Craft Launcher 2/Resources"
+
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v5.0.0
