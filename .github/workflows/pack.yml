@@ -1,0 +1,14 @@
+name: Pack Help.zip
+on:
+  push:
+    paths: '**/**'
+  workflow_dispatch:
+
+jobs:
+  update-help:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Remove
+        run: rm -f * && ls
