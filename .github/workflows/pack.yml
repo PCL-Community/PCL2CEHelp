@@ -15,10 +15,9 @@ jobs:
             rm -f * || true
             rm -r .github
             ls
-            zip -r Help.zip ./
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: Help
-          path: Help.zip
+          path: ./
