@@ -27,6 +27,9 @@ jobs:
           repository: PCL-Community/PCL2-CE
           token: ${{ secrets.UPDATE_PAT_TOKEN }}
           path: PCL2-CE
+      - run: |
+            ls -R
+            CD PCL2-CE
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec
