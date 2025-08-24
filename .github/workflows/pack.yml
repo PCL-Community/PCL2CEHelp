@@ -13,7 +13,7 @@ jobs:
       - name: Pack
         run: |
             rm -f * || true
-            rm -r .github
+            rm -r .*
             zip -r Help.zip ./
             ls
 
