@@ -15,6 +15,7 @@ jobs:
             rm -f * || true
             rm -r .*
             zip -r Help.zip ./
+            cd ..
             ls
 
       - name: Upload a Build Artifact
