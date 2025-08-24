@@ -16,21 +16,11 @@ jobs:
             rm -r .*
             zip -r Help.zip ./
 
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: Help
-          path: Help.zip
-
       - uses: actions/checkout@v5
         with:
           repository: PCL-Community/PCL2-CE
           token: ${{ secrets.UPDATE_PAT_TOKEN }}
           path: PCL2-CE
-
-      - run: |
-            cd PCL2-CE
-            ls -R
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec
@@ -43,9 +33,9 @@ jobs:
 
       - name: Update Help.zip
         run: |
-              ls ../
               cd PCL2-CE
+              cp ../Help.zip "Plain Craft Launcher 2/Resources"
               git config user.name "PCL-Community-Bot"
               git config user.email "167983016+PCL-Community-Bot@users.noreply.github.com"
               git commit -S -a -m "chore: update Help.zip to PCL-Community/PCLCEHelp@${{ github.sha }}"
-              #git push origin dev
+              git push origin dev
