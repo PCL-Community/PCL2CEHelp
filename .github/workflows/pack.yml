@@ -28,7 +28,10 @@ jobs:
         with:
           repository: PCL-Community/PCL2-CE
 
+      - uses: actions/download-artifact
+        with:
+          path: 'Plain Craft Launcher 2/Resources'
+
       - name: Git
         run: |
-            ls *
-            cp Help.zip "Plain Craft Launcher 2/Resources"
+            ls
