@@ -25,6 +25,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           repository: PCL-Community/PCL2-CE
+          token: ${{ secrets.UPDATE_PAT_TOKEN }}
 
       - uses: actions/download-artifact@v5
         with:
