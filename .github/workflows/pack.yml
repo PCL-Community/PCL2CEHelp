@@ -29,7 +29,7 @@ jobs:
           path: PCL2-CE
 
       - name: CD
-        run: ls && cd PCL2-CE
+        run: cd PCL2-CE
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec
@@ -41,7 +41,7 @@ jobs:
 
       - name: Update Help.zip
         run: |
-              ls
+              ls ../
               cd PCL2-CE
               git config user.name "PCL-Community-Bot"
               git config user.email "167983016+PCL-Community-Bot@users.noreply.github.com"
