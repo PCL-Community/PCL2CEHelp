@@ -43,5 +43,5 @@ jobs:
         run: |
               git config user.name "PCL-Community-Bot"
               git config user.email "167983016+PCL-Community-Bot@users.noreply.github.com"
-              git commit -S -a -m "chore: update Help.zip to ${{ github.ACTION_REPOSITORY }}@${{ github.sha }}"
+              git commit -S -a -m "chore: update Help.zip to ${{ github.action_repository }}@${{ github.sha }}"
               git push origin dev
