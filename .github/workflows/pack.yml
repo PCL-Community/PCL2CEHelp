@@ -28,9 +28,8 @@ jobs:
           token: ${{ secrets.UPDATE_PAT_TOKEN }}
           path: PCL2-CE
 
-      - uses: actions/download-artifact@v5
-        with:
-          path: 'Plain Craft Launcher 2/Resources'
+      - name: CD
+        uses: ls && cd PCL2-CE
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec
