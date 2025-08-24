@@ -14,13 +14,14 @@ jobs:
         run: |
             rm -f * || true
             rm -r .github
+            zip Help.zip ./
             ls
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: Help
-          path: ./
+          path: Help.zip
 
       - uses: actions/checkout@v4
         with:
