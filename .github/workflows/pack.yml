@@ -26,10 +26,10 @@ jobs:
         with:
           repository: PCL-Community/PCL2-CE
           token: ${{ secrets.UPDATE_PAT_TOKEN }}
-          path: ../PCL2-CE
+          path: PCL2-CE
 
       - run: |
-            cd ../PCL2-CE
+            cd PCL2-CE
             ls -R
 
       - name: Import GPG key
