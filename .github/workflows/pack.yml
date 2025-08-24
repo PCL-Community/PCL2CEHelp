@@ -29,5 +29,5 @@ jobs:
 
       - name: Git
         run: |
-            ls ../
+            ls *
             cp Help.zip "Plain Craft Launcher 2/Resources"
