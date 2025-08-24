@@ -1,0 +1,46 @@
+name: Pack Help.zip
+on:
+  push:
+    paths: '**/**'
+  workflow_dispatch:
+
+jobs:
+  update-help:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Pack
+        run: |
+            rm -f * || true
+            rm -r .*
+            zip -r Help.zip ./
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Help
+          path: Help.zip
+
+      - uses: actions/checkout@v5
+        with:
+          repository: PCL-Community/PCL2-CE
+
+      - uses: actions/download-artifact@v5
+        with:
+          path: 'Plain Craft Launcher 2/Resources'
+
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec
+        with:
+          gpg_private_key: ${{ secrets.UPDATE_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.UPDATE_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
+      - name: Update Help.zip
+        run: |
+              git config user.name "PCL-Community-Bot"
+              git config user.email "167983016+PCL-Community-Bot@users.noreply.github.com"
+              git commit -S -a -m "chore: update Help.zip to ${{ github.ACTION_REPOSITORY }}@${{ github.sha }}"
+              git push origin dev
