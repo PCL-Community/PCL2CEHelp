@@ -8,14 +8,13 @@ jobs:
   update-help:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Pack
         run: |
             rm -f * || true
             rm -r .*
             zip -r Help.zip ./
-            cd ..
             ls
 
       - name: Upload a Build Artifact
@@ -24,11 +23,11 @@ jobs:
           name: Help
           path: Help.zip
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: PCL-Community/PCL2-CE
 
-      - uses: actions/download-artifact
+      - uses: actions/download-artifact@v5
         with:
           path: 'Plain Craft Launcher 2/Resources'
 
