@@ -22,19 +22,19 @@
         <Grid Margin="0,10,0,0">
             <TextBlock TextWrapping="Wrap" Margin="0,15,0,4" Width="200"
                         Text="1. 前往 LittleSkin 注册一个账号。" HorizontalAlignment="Left" />
-            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/3ee81c368db7c1dd5ba75a3511f07a53565437509.jpg" FallbackSource="https://img.z0z0r4.top/local/2023/05/15/64623b15ae134.png" />
+            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/3ee81c368db7c1dd5ba75a3511f07a53565437509.jpg" />
         </Grid>
 
         <Grid Margin="0,20,0,4">
             <TextBlock TextWrapping="Wrap" Margin="0,15,0,4" Width="200"
                         Text="2. 进入 “仪表盘”，点击左侧 “角色管理”，再点击 “添加新角色”。" HorizontalAlignment="Left" />
-            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/013fe81892559ee494dfc5b1d283d11b565437509.png" FallbackSource="https://img.z0z0r4.top/local/2022/07/10/1/img2.png" />
+            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/013fe81892559ee494dfc5b1d283d11b565437509.png" />
         </Grid>
 
         <Grid Margin="0,20,0,4">
             <TextBlock TextWrapping="Wrap" Margin="0,15,0,4" Width="200"
                         Text="3. 在弹出的窗口内输入角色名（这将会成为联机时的 ID，即游戏中的用户名），填写完成后点击 “确定”。" HorizontalAlignment="Left" />
-            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/3c2575356c7af53c14c8ab8386272962565437509.png" FallbackSource="https://img.z0z0r4.top/local/2022/07/10/1/img3.png" />
+            <local:MyImage Margin="250,0,0,0" HorizontalAlignment="Center" Source="https://i1.hdslb.com/bfs/article/3c2575356c7af53c14c8ab8386272962565437509.png" />
         </Grid>
 
         <Grid Margin="0,20,0,4">
