@@ -2,21 +2,30 @@
 <local:MyCard Title="我可以使用 PCL 制作整合包吗？" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,11">
 	    <TextBlock Margin="0,0,0,4" LineHeight="17"
-                   Text="你目前所使用的是 PCL 社区版。社区版没有分发限制，因此你可以发给其他人或是用于制作整合包、服务器客户端，无需向作者申请授权。" />
+                   Text="你目前所使用的是 PCL 社区版，你可以随意发给其他人或是用于制作整合包、服务器客户端，无需申请授权。" />
     </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="导出整合包" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,11">
+        <local:MyListItem Margin="-5,0,-5,8"
+		                  EventType="打开帮助" EventData="Minecraft/导出整合包.json" />
+	</StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="自动安装整合包" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,11">
 	    <TextBlock Margin="0,0,0,4" LineHeight="17"
-                   Text="将你的整合包重命名为 modpack.zip 或 modpack.mrpack，和 PCL 的 exe 文件放在同一文件夹下。&#xa;如果这样做，打开 PCL 时，PCL 会自动安装这一整合包。" />
+                   Text="若整合包文件名为 modpack.zip 或 modpack.mrpack，且与 PCL 的 exe 文件位于同一文件夹下，那么 PCL 会在打开时自动安装该整合包。" />
+        <TextBlock Margin="0,0,0,4" LineHeight="17"
+                   Text="若在导出时勾选了 “PCL 启动器程序”，就会自动按照此格式打包。" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="删除自己的账号信息" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="需要手动删除账号等敏感信息吗？" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,11">
 	    <TextBlock Margin="0,0,0,4" LineHeight="17"
-                   Text="PCL 将你的账号、密码等重要信息加密存储在注册表中，而不是文件中。&#xa;因此，你无需刻意删除你的账号信息，它们不会随着你的整合包被发放给其他人。" />
+                   Text="无需担心正版账号等敏感信息，它们不会随着整合包发放。" />
     </StackPanel>
 </local:MyCard>
 
