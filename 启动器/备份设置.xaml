@@ -12,11 +12,11 @@
 <local:MyCard Title="备份注册表（已移至 AppData）">
     <StackPanel Margin="25,40,23,15">
         <TextBlock Margin="0,0,0,4" LineHeight="17"
-                   Text="PCL 会在 AppData 中存储部分个人设置（例如账号密码、Java 路径等），在重装系统前有必要先备份其中的内容。&#xa;需要注意的是，账号密码等敏感信息只能在同一台电脑上进行备份、还原，无法在更换电脑的情况下进行迁移。"/>
+                   Text="PCL CE 会在 AppData 中存储部分个人设置（例如账号密码、Java 路径等），在重装系统前有必要先备份其中的内容。&#xa;需要注意的是，账号密码等敏感信息只能在同一台电脑上进行备份、还原，无法在更换电脑的情况下进行迁移。"/>
         <TextBlock Margin="0,12,0,7" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
                     Text="备份方法" />
         <TextBlock Margin="0,0,0,4" LineHeight="17"
-                    Text="PCL 社区版配置文件夹位于 C:\Users\[Windows 用户名]\AppData\Roaming\.PCLCE。"/>
+                    Text="PCL CE 配置文件夹位于 C:\Users\[Windows 用户名]\AppData\Roaming\PCLCE。"/>
         <TextBlock Margin="0,0,0,4" LineHeight="17"
                     Text="如需备份，请使用设置中的“导出设置”功能，并选择要保存的位置。"/>
         <TextBlock Margin="0,12,0,7" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
