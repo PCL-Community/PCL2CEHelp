@@ -1,14 +1,12 @@
 <div align="center"><img src="https://img.z0z0r4.top/local/2022/07/10/1/PCL2HELP.png" alt="PCL 社区版内置帮助库"/></div>
 <div align="center"><img src="https://img.shields.io/github/stars/LTCatt/PCL2Help">&nbsp; <img src="https://img.shields.io/github/forks/LTCatt/PCL2Help?color=%23f8e71c">&nbsp;<img src="https://img.shields.io/github/issues/LTCatt/PCL2Help?color=%237ed321"></div>
 
-</div>
 
-
-## 💎 简介
+## 简介
 
 这是一个 PCL 社区版启动器内置的帮助库，你可以通过它查阅到关于 PCL 社区版启动器及 Minecraft 的帮助。 由 PCL 社区版用户及 Minecraft 玩家共同编写维护。
 
-## ✨ 它有什么用？
+## 它有什么用？
 
 有许多 MC 新人在游戏过程中会遇到很多疑惑，也有 PCL 社区版用户在使用时出现了一些问题。本帮助库的目标即为尽量帮助大家解决这些问题，让新人对 MC 更为熟悉。
 
@@ -29,4 +27,3 @@
 
 非常感谢你抽出宝贵的时间参与编写！
 
-###### 本 README 由 XiaoFans、龙腾猫跃与 wyc-26 共同编辑。
