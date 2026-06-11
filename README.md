@@ -1,3 +1,6 @@
+> [!WARNING]
+> PCL2CEHelp 已废弃，其部分内容将被迁移至 [docs.pclc.cc](https://github.com/PCL-Community/docs.pclc.cc/)。
+
 <div align="center"><img src="https://img.z0z0r4.top/local/2022/07/10/1/PCL2HELP.png" alt="PCL 社区版内置帮助库"/></div>
 <div align="center"><img src="https://img.shields.io/github/stars/LTCatt/PCL2Help">&nbsp; <img src="https://img.shields.io/github/forks/LTCatt/PCL2Help?color=%23f8e71c">&nbsp;<img src="https://img.shields.io/github/issues/LTCatt/PCL2Help?color=%237ed321"></div>
 
